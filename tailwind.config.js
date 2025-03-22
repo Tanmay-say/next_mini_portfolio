@@ -5,21 +5,25 @@ module.exports = {
     theme: {
       extend: {
         colors: {
-          indigo: {
-            100: '#e0e7ff',
-            600: '#4f46e5',
-            700: '#4338ca',
+          gray: {
+            50: '#f9fafb',
+            100: '#f3f4f6',
+            200: '#e5e7eb',
+            300: '#d1d5db',
+            400: '#9ca3af',
+            500: '#6b7280',
+            600: '#4b5563',
+            700: '#374151',
+            800: '#1f2937',
+            900: '#111827',
           },
+          indigo: {
+            600: '#4f46e5',
+          }
         },
-        boxShadow: {
-          'lg': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
-        },
-        transitionProperty: {
-          'transform-shadow': 'transform, box-shadow',
-        }
       },
     },
     plugins: [
-      require('@tailwindcss/typography'),
+      require('@tailwindcss/typography')
     ],
   }
